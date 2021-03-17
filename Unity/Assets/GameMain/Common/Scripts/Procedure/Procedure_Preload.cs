@@ -13,13 +13,11 @@ using GameFramework.Resource;
 using IFix.Core;
 using UnityEngine;
 using UnityGameFramework.Runtime;
-using Debug = UnityEngine.Debug;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
-using ResourceUpdateSuccessEventArgs = UnityGameFramework.Runtime.ResourceUpdateSuccessEventArgs;
 
 namespace GameMain
 {
-    public class ProcedurePreload : ProcedureBase
+    public class Procedure_Preload : ProcedureBase
     {
         private Dictionary<string, bool> m_LoadedFlag = new Dictionary<string, bool>();
 
@@ -28,23 +26,12 @@ namespace GameMain
         {
             base.OnEnter(procedureOwner);
 
-            //如果当前非编辑器资源模式，并且ResourceMode为Package,则先初始化资源
-            if (GameEntry.Resource.ResourceMode == ResourceMode.Package && !GameEntry.Base.EditorResourceMode)
-            {
-                GameEntry.Resource.InitResources(InitCompleteCallBack);
-            }
-            else
-            {
-                InitCompleteCallBack();
-            }
-        }
-
-        private void InitCompleteCallBack()
-        {
+            
             m_LoadedFlag.Clear();
 
             PreloadResources();
         }
+
 
         protected override void OnLeave(ProcedureOwner procedureOwner, bool isShutdown)
         {

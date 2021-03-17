@@ -9,15 +9,13 @@ using GameFramework;
 using GameFramework.Event;
 using GameFramework.Resource;
 using System.IO;
-using System.Net;
-using GameFramework.Procedure;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 
 namespace GameMain
 {
-    public class ProcedureCheckVersion : ProcedureBase
+    public class Procedure_CheckVersion : ProcedureBase
     {
         private bool m_LatestVersionComplete = false;
         private VersionInfo m_VersionInfo = null;
@@ -60,7 +58,7 @@ namespace GameMain
                 return;
             }
 
-            ChangeState<ProcedureUpdateResource>(procedureOwner);
+            ChangeState<Procedure_UpdateResource>(procedureOwner);
         }
 
         private void GotoUpdateApp(object userData)
@@ -133,14 +131,8 @@ namespace GameMain
             wwwForm.AddField("ScreenResolution", WebUtility.EscapeString(screenResolution));
             wwwForm.AddField("UseWifi", WebUtility.EscapeString(useWifi));
 
-            //NOTICE:这里资源服务器如用IIS，传递表单参数会抛出HTTP/405
-#if UNITY_EDITOR
-            GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, wwwForm,this);         
-#elif UNITY_WEBGL
-            GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl, this);
-#else
+            //NOTICE:这里资源服务器如用IIS，传递表单参数会抛出HTTP/405，故IIS站点服务器使用无表单参数的重载方法
             GameEntry.WebRequest.AddWebRequest(GameEntry.BuiltinData.BuildInfo.CheckVersionUrl,wwwForm, this);
-#endif
         }
 
         private void UpdateVersion()

@@ -1,7 +1,5 @@
-﻿using GameFramework;
-using GameFramework.Event;
+﻿using GameFramework.Event;
 using System.Collections.Generic;
-using GameFramework.Procedure;
 using GameFramework.Resource;
 using UnityEngine;
 using UnityGameFramework.Runtime;
@@ -13,7 +11,7 @@ using ResourceUpdateSuccessEventArgs = UnityGameFramework.Runtime.ResourceUpdate
 
 namespace GameMain
 {
-    public class ProcedureUpdateResource : ProcedureBase
+    public class Procedure_UpdateResource : ProcedureBase
     {
         private bool m_UpdateAllComplete = false;
         private int m_UpdateCount = 0;
@@ -68,7 +66,7 @@ namespace GameMain
                 return;
             }
 
-            ChangeState<ProcedurePreload>(procedureOwner);
+            ChangeState<Procedure_Preload>(procedureOwner);
         }
 
         private void StartUpdateResources(object userData)
@@ -244,22 +242,21 @@ namespace GameMain
 
             Log.Warning("Update resource '{0}' is invalid.", ne.Name);
         }
+    }
+    public class UpdateLengthData
+    {
+        private readonly string m_Name;
 
-        private class UpdateLengthData
+        public UpdateLengthData(string name)
         {
-            private readonly string m_Name;
-
-            public UpdateLengthData(string name)
-            {
-                m_Name = name;
-            }
-
-            public string Name
-            {
-                get { return m_Name; }
-            }
-
-            public int Length { get; set; }
+            m_Name = name;
         }
+
+        public string Name
+        {
+            get { return m_Name; }
+        }
+
+        public int Length { get; set; }
     }
 }

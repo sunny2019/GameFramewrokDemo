@@ -3,24 +3,18 @@
   <ResourceCollection>
     <Resources>
       <Resource Name="Fonts" LoadType="1" Packed="True" />
-      <Resource Name="HotFix" LoadType="1" Packed="False" />
+      <Resource Name="Game" LoadType="1" Packed="False" />
       <Resource Name="NativeUI" LoadType="1" Packed="True" />
-      <Resource Name="Scenes" LoadType="1" Packed="False" />
-      <Resource Name="TestCube" LoadType="1" Packed="False" />
-      <Resource Name="UI" LoadType="1" Packed="False" />
       <Resource Name="UISprites" LoadType="1" Packed="True" />
     </Resources>
     <Assets>
       <Asset Guid="04d7dde7615d71b4db1a0c8d67a62e95" ResourceName="NativeUI" />
       <Asset Guid="0a65a68c01a76ea4b8b574827a6467aa" ResourceName="UISprites" />
       <Asset Guid="156d241f796508c4da4fc354a7fbf5a8" ResourceName="UISprites" />
-      <Asset Guid="558a194c1a0047145831674859edb228" ResourceName="TestCube" />
-      <Asset Guid="66fb7bfd288839a4395d1a5116cae38f" ResourceName="UI" />
+      <Asset Guid="37a597c1bbfacfa499e68ab0a409a226" ResourceName="Game" />
       <Asset Guid="77cbb7c5404c10242ab59953e0746314" ResourceName="Fonts" />
       <Asset Guid="a8c07bbe04fdaf04b80e27f651a8edd6" ResourceName="UISprites" />
       <Asset Guid="ab45c3f613f388d43bbf43ec05eb92e2" ResourceName="UISprites" />
-      <Asset Guid="acafaaa423d2ca84fa185f2fca0f2782" ResourceName="HotFix" />
-      <Asset Guid="b189e5b729f035b409abc3837c9a9013" ResourceName="Scenes" />
       <Asset Guid="cadd0764941c8b646ae79b51d0ea8285" ResourceName="UISprites" />
       <Asset Guid="e82837c9099f69a48b48fc44eb8d119d" ResourceName="UISprites" />
     </Assets>
