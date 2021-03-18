@@ -2,8 +2,8 @@
 <UnityGameFramework>
   <ResourceBuilder>
     <Settings>
-      <InternalResourceVersion>35</InternalResourceVersion>
-      <Platforms>128</Platforms>
+      <InternalResourceVersion>37</InternalResourceVersion>
+      <Platforms>129</Platforms>
       <ZipSelected>True</ZipSelected>
       <UncompressedAssetBundleSelected>False</UncompressedAssetBundleSelected>
       <DisableWriteTypeTreeSelected>False</DisableWriteTypeTreeSelected>
