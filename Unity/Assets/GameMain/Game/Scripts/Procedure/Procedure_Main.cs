@@ -44,7 +44,7 @@ namespace GameMain
             {
                 return;
             }
-            Log.Info("加载成功："+re.SceneAssetName+"\t"+re.ErrorMessage);
+            Log.Info("加载失败："+re.SceneAssetName+"\t"+re.ErrorMessage);
         }
 
         private void OnLoadSceneSuccess(object sender, GameEventArgs e)
