@@ -5,10 +5,10 @@ using UnityGameFramework.Runtime;
 
 namespace GameMain
 {
-    public class CodeGenEditor
+    public class EditorCodeGen
     {
-        private static string templatePathFormat = "Assets/GameMain/Common/Editor/Template/{0}.txt";
-
+        private static string templatePathFormat = "Assets/GameMain/Common/Editor/CodeGen/Template/{0}.txt";
+        
         [MenuItem("Assets/Create/C# Script Template/UIForm")]
         static void CodeGenUIForm()
         {

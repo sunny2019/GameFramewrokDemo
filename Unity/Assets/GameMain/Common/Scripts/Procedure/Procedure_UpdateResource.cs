@@ -18,7 +18,7 @@ namespace GameMain
         private long m_UpdateTotalZipLength = 0L;
         private int m_UpdateSuccessCount = 0;
         private List<UpdateLengthData> m_UpdateLengthData = new List<UpdateLengthData>();
-        private UpdateResourceForm m_UpdateResourceForm = null;
+        private UIForm_UpdateResource m_UpdateResourceForm = null;
 
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
@@ -101,8 +101,10 @@ namespace GameMain
             }
 
             float progressTotal = (float) currentTotalUpdateLength / m_UpdateTotalZipLength;
-            string descriptionText = string.Format("{0}/{1}, {2}/{3}, {4:P0}, {5}/s", m_UpdateSuccessCount.ToString(), m_UpdateCount.ToString(),
-                GetLengthString(currentTotalUpdateLength), GetLengthString(m_UpdateTotalZipLength), progressTotal, GetLengthString((int) GameEntry.Download.CurrentSpeed));
+            string descriptionText = string.Format("{0}/{1}, {2}/{3}, {4:P0}, {5}/s", m_UpdateSuccessCount.ToString(),
+                m_UpdateCount.ToString(),
+                GetLengthString(currentTotalUpdateLength), GetLengthString(m_UpdateTotalZipLength), progressTotal,
+                GetLengthString((int) GameEntry.Download.CurrentSpeed));
             m_UpdateResourceForm.SetProgress(progressTotal, descriptionText);
         }
 
@@ -127,9 +129,12 @@ namespace GameMain
         }
 
 
-        private void OnCheckResourcesComplete(int movedcount, int removedCount, int updateCount, long updateTotalLength, long updateTotalZipLength)
+        private void OnCheckResourcesComplete(int movedcount, int removedCount, int updateCount, long updateTotalLength,
+            long updateTotalZipLength)
         {
-            Log.Info("Check resources complete, '{0}' resources need to update, zip length is '{1}', unzip length is '{2}'.", updateCount.ToString(),
+            Log.Info(
+                "Check resources complete, '{0}' resources need to update, zip length is '{1}', unzip length is '{2}'.",
+                updateCount.ToString(),
                 updateTotalZipLength.ToString(), updateTotalLength.ToString());
 
             m_UpdateCount = updateCount;
@@ -143,16 +148,20 @@ namespace GameMain
 
             if (Application.internetReachability == NetworkReachability.ReachableViaCarrierDataNetwork)
             {
-                GameEntry.UI.OpenUIForm("Assets/GameMain/Common/UI/UIForms/DialogForm.prefab", "DefaultGroup", new DialogParams
-                {
-                    Mode = 2,
-                    Title = "提示：资源更新",
-                    Message = "当前存在资源需要进行更新，是否进行？",
-                    ConfirmText = "更新",
-                    OnClickConfirm = StartUpdateResources,
-                    CancelText = "取消",
-                    OnClickCancel = delegate(object userData) { UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit); },
-                });
+                GameEntry.UI.OpenUIForm("Assets/GameMain/Common/UI/UIForms/UIForm_Dialog.prefab",
+                    Constant.UIGroups.Default, Constant.AssetPriority.UIFormAsset, new DialogParams
+                    {
+                        Mode = 2,
+                        Title = "提示：资源更新",
+                        Message = "当前存在资源需要进行更新，是否进行？",
+                        ConfirmText = "更新",
+                        OnClickConfirm = StartUpdateResources,
+                        CancelText = "取消",
+                        OnClickCancel = delegate(object userData)
+                        {
+                            UnityGameFramework.Runtime.GameEntry.Shutdown(ShutdownType.Quit);
+                        },
+                    });
 
                 return;
             }
@@ -220,13 +229,15 @@ namespace GameMain
             ResourceUpdateFailureEventArgs ne = (ResourceUpdateFailureEventArgs) e;
             if (ne.RetryCount >= ne.TotalRetryCount)
             {
-                Log.Error("Update resource '{0}' failure from '{1}' with error message '{2}', retry count '{3}'.", ne.Name, ne.DownloadUri, ne.ErrorMessage,
+                Log.Error("Update resource '{0}' failure from '{1}' with error message '{2}', retry count '{3}'.",
+                    ne.Name, ne.DownloadUri, ne.ErrorMessage,
                     ne.RetryCount.ToString());
                 return;
             }
             else
             {
-                Log.Info("Update resource '{0}' failure from '{1}' with error message '{2}', retry count '{3}'.", ne.Name, ne.DownloadUri, ne.ErrorMessage,
+                Log.Info("Update resource '{0}' failure from '{1}' with error message '{2}', retry count '{3}'.",
+                    ne.Name, ne.DownloadUri, ne.ErrorMessage,
                     ne.RetryCount.ToString());
             }
 
@@ -243,6 +254,7 @@ namespace GameMain
             Log.Warning("Update resource '{0}' is invalid.", ne.Name);
         }
     }
+
     public class UpdateLengthData
     {
         private readonly string m_Name;

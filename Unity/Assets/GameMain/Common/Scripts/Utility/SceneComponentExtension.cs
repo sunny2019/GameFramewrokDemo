@@ -9,12 +9,14 @@ public static class SceneComponentExtension
     /// 卸载所有场景
     /// </summary>
     /// <param name="scene"></param>
-    public static void UnloadAllScene(this SceneComponent scene)
+    public static List<string> UnloadAllScene(this SceneComponent scene,object userData)
     {
         string[] loadedSceneAssetNames = scene.GetLoadedSceneAssetNames();
         for (int i = 0; i < loadedSceneAssetNames.Length; i++)
         {
-            scene.UnloadScene(loadedSceneAssetNames[i]);
+            scene.UnloadScene(loadedSceneAssetNames[i],userData);
         }
+
+        return new List<string>(loadedSceneAssetNames);
     }
 }

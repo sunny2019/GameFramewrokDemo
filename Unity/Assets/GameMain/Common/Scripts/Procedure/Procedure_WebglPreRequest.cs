@@ -18,7 +18,7 @@ namespace GameMain
         private long m_UpdateTotalZipLength = 0L;
         private int m_UpdateSuccessCount = 0;
         private List<UpdateLengthData> m_UpdateLengthData = new List<UpdateLengthData>();
-        private UpdateResourceForm m_UpdateResourceForm = null;
+        private UIForm_UpdateResource m_UpdateResourceForm = null;
 
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace GameMain
             for (int i = 0; i < resNames.Length; i++)
             {
                 m_LoadedFlag.Add(Utility.Path.GetRemotePath(System.IO.Path.Combine(Application.streamingAssetsPath, resNames[i])), false);
-                GameEntry.WebRequest.AddWebRequest(Utility.Path.GetRemotePath(System.IO.Path.Combine(Application.streamingAssetsPath, resNames[i])), this);
+                GameEntry.WebRequest.AddWebRequest(Utility.Path.GetRemotePath(System.IO.Path.Combine(Application.streamingAssetsPath, resNames[i])) ,this);
             }
         }
 
@@ -153,7 +153,9 @@ namespace GameMain
                 }
             }
 
-            ChangeState<Procedure_Main>(procedureOwner);
+            
+            procedureOwner.SetChangeSceneData<Procedure_Main>("Main","music_main");
+            ChangeState<Procedure_ChangeScene>(procedureOwner);
         }
 
         /// <summary>

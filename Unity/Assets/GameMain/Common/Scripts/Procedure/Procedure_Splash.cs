@@ -56,7 +56,7 @@ namespace GameMain
                     {
 #if UNITY_WEBGL
                         //WebGL平台可更新模式提示不支持,并关闭
-                        Log.Fatal("不支持");
+                        Log.Fatal("WebGL platform does not support resource hot update mode.");
 #else
                         //非WebGL平台可更新模式
                     ChangeState(procedureOwner, typeof(Procedure_CheckVersion));

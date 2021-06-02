@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace GameMain
 {
-    public class UpdateResourceForm : MonoBehaviour
+    public class UIForm_UpdateResource : MonoBehaviour
     {
         [SerializeField] private Text m_DescriptionText = null;
 

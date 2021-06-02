@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System;
 using GameFramework.DataTable;
 using GameFramework.UI;
 using System.Collections;
@@ -16,6 +17,25 @@ namespace GameMain
 {
     public static class UIExtension
     {
+        public static void InitUIGroup(this UIComponent uiComponent)
+        {
+            if (GameEntry.UI.UIGroupCount!=0)
+            {
+                Log.Fatal("UIGroup not clear.");
+            }
+            bool addSuccess = false;
+            string[] uiGroupNames =Constant.UIGroups.GetAllUIGroupNames();
+            for (int i = 0; i < uiGroupNames.Length; i++)
+            {
+                addSuccess = false;
+                addSuccess= GameEntry.UI.AddUIGroup(uiGroupNames[i]);
+                if (!addSuccess) 
+                {
+                    Log.Fatal($"UIGroup '{uiGroupNames[i]}' add failure.");
+                }
+            }
+        }
+        
         public static IEnumerator FadeToAlpha(this CanvasGroup canvasGroup, float alpha, float duration)
         {
             float time = 0f;

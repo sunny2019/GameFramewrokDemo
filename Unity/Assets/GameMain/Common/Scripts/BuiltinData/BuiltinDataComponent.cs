@@ -17,7 +17,7 @@ namespace GameMain
         private TextAsset m_BuildInfoTextAsset = null;
 
         [SerializeField]
-        private UpdateResourceForm m_UpdateResourceFormTemplate = null;
+        private UIForm_UpdateResource m_UpdateResourceFormTemplate = null;
 
         private BuildInfo m_BuildInfo = null;
 
@@ -29,7 +29,7 @@ namespace GameMain
             }
         }
 
-        public UpdateResourceForm UpdateResourceFormTemplate
+        public UIForm_UpdateResource UpdateResourceFormTemplate
         {
             get
             {

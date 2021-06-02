@@ -57,9 +57,9 @@ namespace GameMain
         }
 
         //TODO:未完善
-        public void PlayUISound(int uiSoundId)
+        public void PlayUISound(string uiSoundName)
         {
-            //GameEntry.Sound.PlayUISound(uiSoundId);
+            GameEntry.Sound.PlayUISound(uiSoundName);
         }
 
         public static void SetMainFont(Font mainFont)
@@ -103,10 +103,10 @@ namespace GameMain
             for (int i = 0; i < texts.Length; i++)
             {
                 texts[i].font = s_MainFont;
-                if (!string.IsNullOrEmpty(texts[i].text))
-                {
-                    //texts[i].text = GameEntry.Localization.GetString(texts[i].text);
-                }
+                // if (!string.IsNullOrEmpty(texts[i].text))
+                // {
+                //     texts[i].text = GameEntry.Localization.GetString(texts[i].text);
+                // }
             }
         }
 

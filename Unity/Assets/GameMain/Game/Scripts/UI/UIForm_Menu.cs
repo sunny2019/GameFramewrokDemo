@@ -1,0 +1,116 @@
+using System.Text;
+using UnityEngine.UI;
+using UnityGameFramework.Runtime;
+
+namespace GameMain
+{
+    public class UIForm_Menu : UGuiForm
+    {
+        /// <summary>
+        /// 界面初始化。
+        /// </summary>
+        /// <param name="userData">用户自定义数据。</param>
+        protected override void OnInit(object userData)
+        {
+            base.OnInit(userData);
+        }
+
+        /// <summary>
+        /// 界面回收。
+        /// </summary>
+        protected override void OnRecycle()
+        {
+            base.OnRecycle();
+        }
+
+        /// <summary>
+        /// 界面打开。
+        /// </summary>
+        /// <param name="userData">用户自定义数据。</param>
+        protected override void OnOpen(object userData)
+        {
+            base.OnOpen(userData);
+        }
+
+        /// <summary>
+        /// 界面关闭。
+        /// </summary>
+        /// <param name="isShutdown">是否是关闭界面管理器时触发。</param>
+        /// <param name="userData">用户自定义数据。</param>
+        protected override void OnClose(bool isShutdown, object userData)
+        {
+            base.OnClose(isShutdown, userData);
+        }
+
+        /// <summary>
+        /// 界面暂停。
+        /// </summary>
+        protected override void OnPause()
+        {
+            base.OnPause();
+        }
+
+        /// <summary>
+        /// 界面暂停恢复。
+        /// </summary>
+        protected override void OnResume()
+        {
+            base.OnResume();
+        }
+
+        
+        /// <summary>
+        /// 界面遮挡。
+        /// </summary>
+        protected override void OnCover()
+        {
+            base.OnCover();
+        }
+
+        /// <summary>
+        /// 界面遮挡恢复。
+        /// </summary>
+        protected override void OnReveal()
+        {
+            base.OnReveal();
+        }
+
+        /// <summary>
+        /// 界面激活。
+        /// </summary>
+        /// <param name="userData">用户自定义数据。</param>
+        protected override void OnRefocus(object userData)
+        {
+            base.OnRefocus(userData);
+        }
+
+        /// <summary>
+        /// 界面轮询。
+        /// </summary>
+        /// <param name="elapseSeconds">逻辑流逝时间，以秒为单位。</param>
+        /// <param name="realElapseSeconds">真实流逝时间，以秒为单位。</param>
+        protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)
+        {
+            base.OnUpdate(elapseSeconds, realElapseSeconds);
+        }
+
+        /// <summary>
+        /// 界面深度改变。
+        /// </summary>
+        /// <param name="uiGroupDepth">界面组深度。</param>
+        /// <param name="depthInUIGroup">界面在界面组中的深度。</param>
+        protected override void OnDepthChanged(int uiGroupDepth, int depthInUIGroup)
+        {
+            base.OnDepthChanged(uiGroupDepth, depthInUIGroup);
+        }
+
+        /// <summary>
+        /// 设置界面的可见性。
+        /// </summary>
+        /// <param name="visible">界面的可见性。</param>
+        protected override void InternalSetVisible(bool visible)
+        {
+            base.InternalSetVisible(visible);
+        }
+    }
+}

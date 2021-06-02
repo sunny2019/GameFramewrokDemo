@@ -5,9 +5,12 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 namespace GameMain
 {
     public abstract class ProcedureBase : GameFramework.Procedure.ProcedureBase
     {
+        
     }
+
 }

@@ -51,7 +51,8 @@ namespace GameMain
                 }
             }
 
-            ChangeState<Procedure_Main>(procedureOwner);
+            procedureOwner.SetChangeSceneData<Procedure_Main>("Main","music_main");
+            ChangeState<Procedure_ChangeScene>(procedureOwner);
         }
 
 
@@ -71,7 +72,7 @@ namespace GameMain
         private void LoadInject(string bytesAssetName)
         {
             m_LoadedFlag.Add(Utility.Text.Format("ByteFiles.{0}", bytesAssetName), false);
-            GameEntry.Resource.LoadAsset(bytesAssetName, 0, new LoadAssetCallbacks(
+            GameEntry.Resource.LoadAsset(bytesAssetName, Constant.AssetPriority.InjectFixAsset, new LoadAssetCallbacks(
                 (assetName, asset, duration, userData) =>
                 {
                     byte[] bytes = ((TextAsset) asset).bytes;
