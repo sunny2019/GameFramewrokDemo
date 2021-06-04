@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 0
+    mTerms:
+    - Term: test_Boom
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u7206\u70B8\u7269"
+      - Explosive
+      - "\u7206\u767A\u7684\u306A"
+      - "\uD3ED\uBC1C\uBB3C"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_ChangeLanguage
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u5207\u6362\u8BED\u8A00"
+      - Switch Language
+      - "\u8A00\u8A9E\u3092\u5207\u308A\u66FF\u3048\u308B"
+      - "\uC5B8\uC5B4 \uC804\uD658"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_IsBoom
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u662F\u5426\u7206\u70B8"
+      - Does It Explode
+      - "\u7206\u767A\u3059\u308B\u304B"
+      - "\uD3ED\uBC1C\uD569\uB2C8\uAE4C"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_LeftRotate
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u5DE6\u8F6C"
+      - Turn Left
+      - "\u5DE6\u6298\u3057\u3066\u304F\u3060\u3055\u3044"
+      - "\uC67C\uCABD\uC73C\uB85C \uB3CC\uC544"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_Player
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u67E5\u770B\u4EBA\u7269"
+      - View People
+      - "\u4EBA\u3092\u898B\u308B"
+      - "\uC0AC\uB78C\uBCF4\uAE30"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_Quit
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u9000\u51FA"
+      - Exit
+      - "\u8131\u843D"
+      - "\uADF8\uB9CC\uB450 \uB2E4"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_RightRotate
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u53F3\u8F6C"
+      - Turn Right
+      - "\u53F3\u306B\u66F2\u304C\u308B"
+      - "\uC6B0\uD68C\uC804"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_Title
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u8FD9\u662F\u4E00\u4E2A\u6807\u9898"
+      - This Is A Title
+      - "\u3053\u308C\u306F\u30BF\u30A4\u30C8\u30EB\u3067\u3059"
+      - "\uC774\uAC83\uC740 \uC81C\uBAA9\uC785\uB2C8\uB2E4"
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_Image
+      TermType: 5
+      Description: 
+      Languages:
+      - image1
+      - img-a4107a39b78eea16c713ab771e36372e
+      - image1
+      - img-a4107a39b78eea16c713ab771e36372e
+      Flags: 00000000
+      Languages_Touch: []
+    - Term: test_ChangeImage
+      TermType: 0
+      Description: 
+      Languages:
+      - "\u672C\u5730\u5316\u56FE\u7247"
+      - Localized Image
+      - "\u30ED\u30FC\u30AB\u30E9\u30A4\u30BA\u3055\u308C\u305F\u753B\u50CF"
+      - "\uD604\uC9C0\uD654 \uB41C \uC774\uBBF8\uC9C0"
+      Flags: 00000000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 1
+    mTerm_AppName: 
+    mLanguages:
+    - Name: Chinese (Simplified)
+      Code: zh-CN
+      Flags: 0
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Japanese
+      Code: ja
+      Flags: 0
+    - Name: Korean
+      Code: ko
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw-lva8mZ11AAqM2fSkdV9j2nh0O0KWseni9BA5RXcKrtQCr7QRHeq19EmZLd0h2cOK/exec
+    Google_SpreadsheetKey: 1fDetNsRQJ9hkoEjsTKBR9u51x-3khL4YmOBGS3xw164
+    Google_SpreadsheetName: I2Loc Zero Localization
+    Google_LastUpdatedVersion: 
+    Google_Password: simtop
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets:
+    - {fileID: 21300000, guid: bbe8619380a89924dbdbeaed9157fa4c, type: 3}
+    - {fileID: 21300000, guid: 4e5a6fac32accf645a64cfce414c2d93, type: 3}
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1

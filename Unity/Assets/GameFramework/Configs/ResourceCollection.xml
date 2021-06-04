@@ -2,21 +2,183 @@
 <UnityGameFramework>
   <ResourceCollection>
     <Resources>
+      <Resource Name="ChangeSceneSprite" LoadType="1" Packed="False" />
+      <Resource Name="Entities" LoadType="1" Packed="False" />
+      <Resource Name="Env" LoadType="1" Packed="False" />
       <Resource Name="Fonts" LoadType="1" Packed="True" />
       <Resource Name="Game" LoadType="1" Packed="False" />
+      <Resource Name="Materials" LoadType="1" Packed="False" />
+      <Resource Name="Music" LoadType="1" Packed="False" />
       <Resource Name="NativeUI" LoadType="1" Packed="True" />
+      <Resource Name="Spites" LoadType="1" Packed="False" />
+      <Resource Name="UIForm" LoadType="1" Packed="False" />
       <Resource Name="UISprites" LoadType="1" Packed="True" />
     </Resources>
     <Assets>
+      <Asset Guid="002f7a569314a244fb643e8ea8d00376" ResourceName="Env" />
+      <Asset Guid="00e2e59cbc04eab4a982218df54ce70b" ResourceName="Env" />
       <Asset Guid="04d7dde7615d71b4db1a0c8d67a62e95" ResourceName="NativeUI" />
+      <Asset Guid="05723fa5edef5fa4ab72eb90ae0bf7b0" ResourceName="Env" />
+      <Asset Guid="08b7d3dcb8d6b9247b1800cd79905e16" ResourceName="Env" />
+      <Asset Guid="092e8eab260eaf84e890e2e5dbc513b1" ResourceName="Env" />
+      <Asset Guid="09cc238bd856b5d468789a6d2d0f48ed" ResourceName="Env" />
       <Asset Guid="0a65a68c01a76ea4b8b574827a6467aa" ResourceName="UISprites" />
+      <Asset Guid="0aae23549399ae240aa3fcaf1b7ae6b0" ResourceName="Env" />
+      <Asset Guid="0ba258545da721e488ecb71ffd143b6f" ResourceName="Env" />
+      <Asset Guid="0bb174f69c9851a48b09bf7d8180c39e" ResourceName="Env" />
+      <Asset Guid="0d60296d64386c045b4e53d4d9e02d05" ResourceName="Materials" />
+      <Asset Guid="0fd5be61d8c00de419d45d6bf745a69c" ResourceName="Env" />
+      <Asset Guid="144403e0e442d2a448335e0c845d665b" ResourceName="Env" />
       <Asset Guid="156d241f796508c4da4fc354a7fbf5a8" ResourceName="UISprites" />
-      <Asset Guid="37a597c1bbfacfa499e68ab0a409a226" ResourceName="Game" />
+      <Asset Guid="15977c94193725642b83e5c7be73b2e8" ResourceName="Env" />
+      <Asset Guid="1645880bdf365054a8c29b271c30eb36" ResourceName="Env" />
+      <Asset Guid="16c4b1c9bf28bc44eab122106a0e4864" ResourceName="Env" />
+      <Asset Guid="1716e599fb056014ca8f5786b3a82fcf" ResourceName="Env" />
+      <Asset Guid="186ecc7a1f977cc4fab5658c00fa3c4d" ResourceName="Env" />
+      <Asset Guid="19a4efca8c789e648b8164844da0c19a" ResourceName="Entities" />
+      <Asset Guid="1a8449922d22bae4791e0335226fa1aa" ResourceName="Env" />
+      <Asset Guid="1aad01ae01d836647b215e40f1f4c1a7" ResourceName="Env" />
+      <Asset Guid="22a3fd8d3e59a1149bdcd775c0e87241" ResourceName="Env" />
+      <Asset Guid="264414c28ea0fbb41b924fd17d9228b3" ResourceName="Env" />
+      <Asset Guid="274fdec0feeaa784f96a62f99c4be287" ResourceName="Env" />
+      <Asset Guid="2767c12992d890f44b14f433fe854668" ResourceName="Env" />
+      <Asset Guid="2833d262217d88343af597d130ed77d7" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="2ad1cd1aa7e7a804f9a3f04c0528fadf" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="2b519101e10d4a74580d4c86ac9e03e6" ResourceName="Env" />
+      <Asset Guid="2cc11338d0505c7479e4ac60c01c671d" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="2e716c43576f71b4aa87e6cb4ebeaeab" ResourceName="Env" />
+      <Asset Guid="2ef20853860a4694c9c08c312d121b56" ResourceName="Env" />
+      <Asset Guid="305f277e1529222439b495a441de2f0b" ResourceName="Env" />
+      <Asset Guid="30c389f0d35cc414d9e841ff82ce1424" ResourceName="Env" />
+      <Asset Guid="3602432658d7f1540978cbbd6875ad2d" ResourceName="Env" />
+      <Asset Guid="37435aefe5da6f74f8b28c81bb4ffad4" ResourceName="Env" />
+      <Asset Guid="386f40ad68cdd3c4fbcb471ef2d93772" ResourceName="Env" />
+      <Asset Guid="388d2ede35ec91345943f17a010818fc" ResourceName="Env" />
+      <Asset Guid="3ad660daf3a1e02458b9f3eca418861a" ResourceName="Env" />
+      <Asset Guid="434bfd6528d84e643ade0d2cd5c6fe1b" ResourceName="Env" />
+      <Asset Guid="4432020e36e26f946a400515834f11b7" ResourceName="Env" />
+      <Asset Guid="4500da6a464da55408dd1ff2324163a7" ResourceName="Env" />
+      <Asset Guid="455995b8866658b42b3da7b1cab18535" ResourceName="Env" />
+      <Asset Guid="46a54c5b0997d8b47bf6519139a81b86" ResourceName="Env" />
+      <Asset Guid="491dc122236ad9749a046177ea69736d" ResourceName="Env" />
+      <Asset Guid="4a9eb490516647a4d8765165bfb9cf47" ResourceName="Env" />
+      <Asset Guid="4c1686a5131ac8b45bfe913f509289c0" ResourceName="Env" />
+      <Asset Guid="4e5a6fac32accf645a64cfce414c2d93" ResourceName="Spites" />
+      <Asset Guid="5286e490afadac545ae3a1595b1e96e1" ResourceName="Env" />
+      <Asset Guid="52eeab1f0ce4d934591972b6df5d179b" ResourceName="Env" />
+      <Asset Guid="54708add4b909204cb861ed2bd2cfcdf" ResourceName="Env" />
+      <Asset Guid="58c79ebc04f48c74fa4869c3f7d941fd" ResourceName="Env" />
+      <Asset Guid="58d53420af384224ea4cfee8973d18cb" ResourceName="Env" />
+      <Asset Guid="5a5a8e9d7228e204a91c0fb79c12479b" ResourceName="Env" />
+      <Asset Guid="5af0f4cd6afa8424c848e6914024fd59" ResourceName="Materials" />
+      <Asset Guid="5c4fa0e44769f8f46a06d96031e56a4e" ResourceName="Env" />
+      <Asset Guid="5c9211eb71cff4f4996a21d92317f601" ResourceName="Env" />
+      <Asset Guid="5cf40d1e35a26c0458a6bc1dff17359c" ResourceName="Materials" />
+      <Asset Guid="5fb4dbc1b7c07b9418845eb61970d9df" ResourceName="Env" />
+      <Asset Guid="60f048e3ccfd7d0498e095661396963b" ResourceName="Env" />
+      <Asset Guid="63ce2b31e16acab4d8a41f884c36333c" ResourceName="Env" />
+      <Asset Guid="645e0ccb96eef934aa12bd4c02a4bd66" ResourceName="Env" />
+      <Asset Guid="65a171ea06543b04fa7aa086cd66702d" ResourceName="Env" />
+      <Asset Guid="68cbfa1438162b243ac02fb9e3e30581" ResourceName="Env" />
+      <Asset Guid="6910e2407cd484a42a0c2598114751a0" ResourceName="Env" />
+      <Asset Guid="6bc5a23d8cb251f40b96a1fbf4ddb4fc" ResourceName="Env" />
+      <Asset Guid="6db1e633533718d49bd0b8329bc37412" ResourceName="Env" />
+      <Asset Guid="6dcae7204dd466c4c862bc640ea7c02e" ResourceName="Env" />
+      <Asset Guid="6fc2010b5899cfd488a0ddf205679e2b" ResourceName="Env" />
+      <Asset Guid="6fdeb1faa1b42904e9210dd047b256ba" ResourceName="Env" />
+      <Asset Guid="7087784e228be8745af45599a5130532" ResourceName="Env" />
+      <Asset Guid="70fbff8150321794f8532fef4f4d7c98" ResourceName="Env" />
+      <Asset Guid="7110966a22a1bd74c894def7bbb4b8cb" ResourceName="Env" />
+      <Asset Guid="71442e8cd72511e4fabb72f1a2cc82dd" ResourceName="Env" />
+      <Asset Guid="752014a26efd03145b74d57634ef9245" ResourceName="Env" />
+      <Asset Guid="7689b2d5def66f04eb3b0905d7b65084" ResourceName="Env" />
+      <Asset Guid="7710c12951e94d24eb1b65f105f6823e" ResourceName="Env" />
       <Asset Guid="77cbb7c5404c10242ab59953e0746314" ResourceName="Fonts" />
+      <Asset Guid="7a77ea810bbc0db4992e500affe32dbf" ResourceName="Env" />
+      <Asset Guid="7d1c542ac0453aa40a248ffb042193c2" ResourceName="Env" />
+      <Asset Guid="7d350a824190e0647822f95e9f7bbc97" ResourceName="Env" />
+      <Asset Guid="7dca68918011bd644a4dc268eea79b44" ResourceName="Env" />
+      <Asset Guid="7deee4ad3618a17429fa704cea48558c" ResourceName="Env" />
+      <Asset Guid="7f3b1263233678a4a92861d908051fe3" ResourceName="Env" />
+      <Asset Guid="813f38ebf5eabe1429b83876fbaa47db" ResourceName="Env" />
+      <Asset Guid="82188904581423c4a9ed3fbf3286ccdd" ResourceName="Env" />
+      <Asset Guid="83ca3216726525148a325296526fcfa7" ResourceName="Env" />
+      <Asset Guid="87d1d734739f10440b2bdbb449c09a9e" ResourceName="Env" />
+      <Asset Guid="87dc0b67e5fe70f40a31e17b0c0058b4" ResourceName="Env" />
+      <Asset Guid="8b3f67c33dd9e9c4ea594b19207b4fbe" ResourceName="Env" />
+      <Asset Guid="8edf1a08abb5cb342a2a608b289c1f91" ResourceName="Env" />
+      <Asset Guid="8f07894e139232f4fb48b79133ad05fa" ResourceName="Env" />
+      <Asset Guid="94003cdd02bfa0849b07108d63f10e24" ResourceName="Env" />
+      <Asset Guid="957bb31991bce1640a18d0a109c71f3d" ResourceName="Env" />
+      <Asset Guid="983cc013c4b80a4439c3d25c682bc989" ResourceName="Materials" />
+      <Asset Guid="9bd069d17b875254f9fc1eeccdd647b4" ResourceName="Env" />
+      <Asset Guid="9d123ff5b15c0bd4fbd33779e2acdbd9" ResourceName="Env" />
+      <Asset Guid="9d200fbd47e9c7f45ad54450ebd25b94" ResourceName="Env" />
+      <Asset Guid="9e6377f4cae22eb4194f71c6e76c37b9" ResourceName="Env" />
+      <Asset Guid="9f21020355643c74c88002634abcdabd" ResourceName="Env" />
+      <Asset Guid="a179c8466a1b1394f8a697c97b0bfee8" ResourceName="Music" />
+      <Asset Guid="a25996a7d0674de40a8273b54b50aa7b" ResourceName="Env" />
+      <Asset Guid="a463cb358b3f799499b5078f511ef61e" ResourceName="Env" />
       <Asset Guid="a8c07bbe04fdaf04b80e27f651a8edd6" ResourceName="UISprites" />
+      <Asset Guid="a90ec1b8be596134b912428bfce1f226" ResourceName="Env" />
       <Asset Guid="ab45c3f613f388d43bbf43ec05eb92e2" ResourceName="UISprites" />
+      <Asset Guid="ab945ff7c1d59bb4a8b506cb8c7dafcd" ResourceName="Env" />
+      <Asset Guid="abc79d9dbe8289140a97213b865e2603" ResourceName="Materials" />
+      <Asset Guid="ae9772ea62bbc724eb9b8ef81109f733" ResourceName="Env" />
+      <Asset Guid="af46e0e24402dfa49aea336191bc47ab" ResourceName="Env" />
+      <Asset Guid="af5390e2a0373984db3740f21c0ec034" ResourceName="Env" />
+      <Asset Guid="b20a55e38e0b0c049a2dbd753924b64b" ResourceName="UIForm" />
+      <Asset Guid="b36c73269c1668c4bbfb76bf41a74b15" ResourceName="Env" />
+      <Asset Guid="b44415eef131de742a4190453fc4d68e" ResourceName="Env" />
+      <Asset Guid="b75a02a185084be49bc0ead09438de21" ResourceName="Env" />
+      <Asset Guid="bbb972e8372282f4093c9484693385fd" ResourceName="Env" />
+      <Asset Guid="bbe8619380a89924dbdbeaed9157fa4c" ResourceName="Spites" />
+      <Asset Guid="bd1a894f239d58d4dbf63f27e28096bd" ResourceName="Env" />
+      <Asset Guid="bdf8e7438a7816543998181bd3067573" ResourceName="Env" />
+      <Asset Guid="c191cc4231bc1a940986671275027664" ResourceName="Env" />
+      <Asset Guid="c20b40242fb425a48840e03f7f3a50f4" ResourceName="Env" />
+      <Asset Guid="c23d7dd34e2d29a42bf0998f5f20de59" ResourceName="Env" />
+      <Asset Guid="c7acbad2649a15647a7a4dfd8cceb5ac" ResourceName="Env" />
+      <Asset Guid="c96016c34e7be62488e588470988ef5b" ResourceName="Env" />
       <Asset Guid="cadd0764941c8b646ae79b51d0ea8285" ResourceName="UISprites" />
+      <Asset Guid="caf770415cf8b3745b977df80c57628b" ResourceName="Env" />
+      <Asset Guid="cc4034e4bb7d9cd418975561c7bcd316" ResourceName="Env" />
+      <Asset Guid="cd87e5026d1695148aabe96121c526ef" ResourceName="Env" />
+      <Asset Guid="d1fd41beb70267947bc1c996df07593d" ResourceName="Env" />
+      <Asset Guid="d2809ab9b90eea7419d8d90d4c505d35" ResourceName="Game" />
+      <Asset Guid="d28a5d39d87b52c49824501fac8b689c" ResourceName="Env" />
+      <Asset Guid="d354bbf6d0a7bc543b86d5b1337c7933" ResourceName="Env" />
+      <Asset Guid="d4997bb047d8fbb458f4d63b2322ebdc" ResourceName="Env" />
+      <Asset Guid="d4d6eed92fb93e948b95c2fc4d1f6f8d" ResourceName="Env" />
+      <Asset Guid="d68abfcba378a4f46847fa7f406b6ba6" ResourceName="Env" />
+      <Asset Guid="d7113c6e2a0f65c4abdb33666078052f" ResourceName="Env" />
+      <Asset Guid="d807c81e403145649a1f0811d9e60054" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="db17b04440273ea4680449f4f625b553" ResourceName="Entities" />
+      <Asset Guid="db3f18eb8a22850498408a748fa79994" ResourceName="UIForm" />
+      <Asset Guid="dc3de67326229ab459a1320acc34b8ea" ResourceName="Env" />
+      <Asset Guid="dc53ddfef4a2d414f83c0332e80bfbb6" ResourceName="Env" />
+      <Asset Guid="dc8d4cd83fb132148b461e2751ad2776" ResourceName="Materials" />
+      <Asset Guid="dc9954dcaaaee02409e17bacb3dcc453" ResourceName="Env" />
+      <Asset Guid="e1032c9b5d7d362489670d42997dceb5" ResourceName="Env" />
+      <Asset Guid="e1154cf6ac27b2f45b4ae35582e7e363" ResourceName="Env" />
+      <Asset Guid="e21e9fe65c4a7b942a90e2f50da0e649" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="e62a87139c1b700419028bb91db4a6b2" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="e7489574cca6d4645a7019414b8288e8" ResourceName="Env" />
       <Asset Guid="e82837c9099f69a48b48fc44eb8d119d" ResourceName="UISprites" />
+      <Asset Guid="e85c18dfba00c9540859ea847782af5b" ResourceName="Env" />
+      <Asset Guid="e88b7bb02ae149940a5a0cddf34fe370" ResourceName="Env" />
+      <Asset Guid="e978333221b12f44ba9099ca8d181f25" ResourceName="Env" />
+      <Asset Guid="ea48d15a3d30c4943927bc8edcd3ff96" ResourceName="Env" />
+      <Asset Guid="efd8147160aa6c64c8121a2ed788744e" ResourceName="Env" />
+      <Asset Guid="f274f0fb5e5bc294ca9a0ff4cf1f0ff7" ResourceName="Env" />
+      <Asset Guid="f31c6bb6e68212e41b0bcae74612a240" ResourceName="Env" />
+      <Asset Guid="f34a4e9b86005de4da2625205407868e" ResourceName="Env" />
+      <Asset Guid="f661498175107c749a33d97304c423eb" ResourceName="Env" />
+      <Asset Guid="f71e980e020ab924ebed9a227a648ec8" ResourceName="Env" />
+      <Asset Guid="f867a2534aa85914d9e6b62f681cdf69" ResourceName="Env" />
+      <Asset Guid="f97780a5b4f3ed64ca0fe117ef736a11" ResourceName="Env" />
+      <Asset Guid="fdbaffe02e20d7446b2ab60ac01894fa" ResourceName="ChangeSceneSprite" />
+      <Asset Guid="ff33af19770dd3e489f9c65e388009fe" ResourceName="Env" />
     </Assets>
   </ResourceCollection>
 </UnityGameFramework>
